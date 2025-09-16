@@ -14,3 +14,8 @@ msg = """
 Hi, i am really afraid. Could you readme an Story?.
 """
 cloneVoice("dany", msg, "dany_cloned_04.wav")
+
+msg = """
+Hi, i am fine.
+"""
+cloneVoice("dany", msg, "dany_cloned_05.wav")
