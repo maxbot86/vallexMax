@@ -8,6 +8,7 @@ def cloneVoice(modelVoice, msg, outputFile):
     write_wav(outputFile, SAMPLE_RATE, audio_array)
 
 def trainVoiceModel(modelName, pathAudioExample, transcrption=''):
+    print(f"Training voice model {modelName} with audio example {pathAudioExample} and transcription {transcrption}")
     if transcrption =='':
         make_prompt(name=modelName, audio_prompt_path=pathAudioExample)
     else:
