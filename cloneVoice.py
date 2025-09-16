@@ -3,6 +3,7 @@ from utils.generation import SAMPLE_RATE, generate_audio, preload_models
 from scipy.io.wavfile import write as write_wav
 
 def cloneVoice(modelVoice, msg, outputFile):
+    print(f"Cloning voice {modelVoice} with message {msg} to {outputFile}")
     audio_array = generate_audio(msg, prompt=modelVoice)
     write_wav(outputFile, SAMPLE_RATE, audio_array)
 

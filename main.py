@@ -5,7 +5,7 @@ preload_models()
 
 #===============================================
 msg = """
-Hello, how are you? My voice was make by an artificial intelligence. Good bye  and see you late!
+Hello, how are you? My voice was make by an artificial intelligence, but i am not sure if it is good. Good bye  and see you late!
 """
 cloneVoice("dany", msg, "dany_cloned_03.wav")
 
